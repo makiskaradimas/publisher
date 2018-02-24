@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "publisher-db": {
+    "host": "publisher-db",
+    "port": 27017,
+    "url": "mongodb://publisher-db:27017/publisher",
+    "database": "publisher",
+    "password": "",
+    "name": "publisherdb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

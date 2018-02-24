@@ -1,0 +1,22 @@
+version: '3'
+services:
+  publisher:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: publisher
+    depends_on:
+      - publisher-db
+    ports:
+      - '3000:3000'
+    container_name: publisher
+  publisher-db:
+    image: mongo:3.4.1
+    ports:
+      - '9019:27017'
+    container_name: publisher-db
+    entrypoint: mongod --replSet publisher
+networks:
+  default:
+    external:
+      name: data-enrichment
