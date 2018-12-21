@@ -9,7 +9,7 @@
     "url": "mongodb://publisher-db:27017/publisher",
     "database": "publisher",
     "password": "",
-    "name": "publisherdb",
+    "name": "publisher-db",
     "user": "",
     "connector": "mongodb"
   }
